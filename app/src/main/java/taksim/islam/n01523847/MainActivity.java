@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
     public  void onBackPressed(){
         View parentLayout =
                 findViewById(android.R.id.content);
-        Snackbar.make(parentLayout, "Are you sure!!",
+        Snackbar.make(parentLayout, R.string.sure,
                         Snackbar.LENGTH_LONG)
-                .setAction("Yes",
+                .setAction(R.string.yes,
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {finish();} }) .show();

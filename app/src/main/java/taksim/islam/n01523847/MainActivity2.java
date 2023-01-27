@@ -17,7 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         TextView txt = findViewById(R.id.txt2);
         String msg2 = getIntent().getStringExtra("key");
         txt.setText(msg2);
@@ -26,9 +26,9 @@ public class MainActivity2 extends AppCompatActivity {
     public  void onBackPressed(){
         View parentLayout =
                 findViewById(android.R.id.content);
-        Snackbar.make(parentLayout, "Do u wanna go back?",
+        Snackbar.make(parentLayout, R.string.sure,
                         Snackbar.LENGTH_LONG)
-                .setAction("Yes",
+                .setAction(R.string.yes,
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {finish();} }) .show();
