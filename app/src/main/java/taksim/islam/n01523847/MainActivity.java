@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,5 +25,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
 
-    }}
+    }
+    @Override
+    public  void onBackPressed(){
+        View parentLayout =
+                findViewById(android.R.id.content);
+        Snackbar.make(parentLayout, "Are you sure!!",
+                        Snackbar.LENGTH_LONG)
+                .setAction("Yes",
+                        new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {finish();} }) .show();
+
+    }
+
+}
 
