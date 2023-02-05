@@ -11,7 +11,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Objects;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends Menu {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
