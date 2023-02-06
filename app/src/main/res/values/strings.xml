@@ -4,4 +4,8 @@
     <string name="taksim_islam">Taksim Islam </string>
     <string name="sure">Are you sure!!</string>
     <string name="yes">Yes</string>
+    <string name="success">Success</string>
+    <string name="digiterror">Must be 16 digit</string>
+    <string name="minLen">Minimum Name Length is 3</string>
+    <string name="makeSelection">Please make a selection</string>
 </resources>

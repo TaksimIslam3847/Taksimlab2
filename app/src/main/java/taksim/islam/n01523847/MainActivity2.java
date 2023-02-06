@@ -28,7 +28,7 @@ public class MainActivity2 extends Menu {
         imageButton = findViewById(R.id.imageButton2);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+             public void onClick(View view){
                 int radioid = Radiogroup.getCheckedRadioButtonId();
                 switch(radioid){
                     case R.id.apartmentButton:
@@ -38,7 +38,7 @@ public class MainActivity2 extends Menu {
                         openhouseActivity();
                         break;
                     default:
-                        Toast.makeText(MainActivity2.this, "Please make a selection", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity2.this, R.string.makeSelection, Toast.LENGTH_SHORT).show();
                 }
             }
         });
