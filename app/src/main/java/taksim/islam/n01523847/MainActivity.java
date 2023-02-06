@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
-public class MainActivity extends Menu {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +19,7 @@ public class MainActivity extends Menu {
     }
 
     public void changeactivity(View view){
-        Toast.makeText(this, R.string.taksim_islam, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this,MainActivity2.class);
-        String name = getString(R.string.taksim_islam);
-        intent.putExtra("key",name);
         startActivity(intent);
 
 
